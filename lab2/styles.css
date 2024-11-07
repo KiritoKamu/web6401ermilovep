@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Селекторы классов для выравнивания */
+.left-align {
+    text-align: left;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* Теговый селектор для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Классный селектор для таблиц */
+.schedule-table th,
+.schedule-table td,
+.routes-table th,
+.routes-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Идентификаторный селектор для футера */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
