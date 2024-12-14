@@ -3,7 +3,7 @@
  * @param {*} n
  */
 function isInteger(n) {
-    return (n | 0 ) === n;
+    return ( n | 0 ) === n;
 }
 
 /**
@@ -12,7 +12,7 @@ function isInteger(n) {
 function even() {
     let mas = [];
     for (let t = 2; t <= 20; t += 2){
-        mas.push(i);
+        mas.push(t);
     }
     return mas;
 }
@@ -26,7 +26,7 @@ function sumTo(n) {
     for(let i = 1; i <= n; i++) {
         sigma += i;
     }
-    return res;
+    return sigma;
 }
 
 /**
@@ -45,7 +45,7 @@ function recSumTo(n) {
 function factorial(n){
     var result = 1;
     while(n){
-        result *= n--;
+        result *= n--; // decrement
     }
     return result;
 }
@@ -121,6 +121,7 @@ function sequence(start = 0, step = 1) {
         return result;
     }
 }
+console.log(sequence(4,65))
 
 /**
  * Напишите функцию deepEqual, которая принимает два значения
@@ -137,33 +138,29 @@ function sequence(start = 0, step = 1) {
  * deepEqual({arr: [22, 33], text: 'text'}, {arr: [22, 3], text: 'text2'}) // false
  */
 function deepEqual(firstObject, secondObject) {
-    // Проверка на строгое равенство
-    if (firstObject === secondObject) {
-        return true;
-    }
+	if (Number.isNaN(firstObject) && Number.isNaN(secondObject)) {
+		return true;
+	}
 
-    // Проверка на типы и наличие объектов
-    if (firstObject == null || secondObject == null || typeof firstObject !== 'object' || typeof secondObject !== 'object') {
-        return false;
-    }
+	if (firstObject === secondObject) {
+		return true;
+	}
+	
+	if (typeof(firstObject) !== "object" || typeof(secondObject) !== "object") {
+		return false;
+	}
 
-    // Получаем массивы ключей объектов
-    const firstKeys = Object.keys(firstObject);
-    const secondKeys = Object.keys(secondObject);
-
-    // Сравниваем количество ключей
-    if (firstKeys.length !== secondKeys.length) {
-        return false;
-    }
-
-    // Сравниваем значения по ключам рекурсивно
-    for (const key of firstKeys) {
-        if (!secondKeys.includes(key) || !deepEqual(firstObject[key], secondObject[key])) {
-            return false;
-        }
-    }
-
-    return true; // Если все проверки пройдены, объекты равны
+	let firstKeys = Object.keys(firstObject);
+	let secondKeys = Object.keys(secondObject);
+	if (firstKeys.length !== secondKeys.length) {
+		return false;
+	}
+	for (let key of firstKeys) {
+		if (!secondKeys.includes(key) || !deepEqual(firstObject[key], secondObject[key])) {
+			return false;
+		}
+	}
+	return true;
 }
 
 module.exports = {
