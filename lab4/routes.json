@@ -1,0 +1,48 @@
+{
+    "/data_table": {
+        "get": {
+            "data": [
+                {
+                    "number": "1",
+                    "startStation": "Железнодорожный вокзал",
+                    "endStation": "А/ст "Красная Глинка""
+                },
+                {
+                    "number": "4",
+                    "startStation": "А/ст "Красная Глинка"",
+                    "endStation": "Пос. Горный (СКУ)"
+                },
+                {
+                    "number": "45",
+                    "startStation": "А/ст "Аврора"",
+                    "endStation": "А/ст "Красная Глинка""
+                },
+                {
+                    "number": "56",
+                    "startStation": "Аэрокосмический университет",
+                    "endStation": "Микрорайон "Крутые Ключи""
+                },
+                {
+                    "number": "68",
+                    "startStation": "А/ст "Красная Глинка"",
+                    "endStation": "Ст. м. "Победа""
+                },
+                {
+                    "number": "78",
+                    "startStation": "Проспект Кирова",
+                    "endStation": "Пос. Берёза (Аэропорт Курумоч)"
+                },
+                {
+                    "number": "79",
+                    "startStation": "Проспект Кирова",
+                    "endStation": "Пос. Прибрежный"
+                },
+                {
+                    "number": "91",
+                    "startStation": "СПТУ-50",
+                    "endStation": "ул. Ташкентская"
+                }
+            ]
+        }
+    }
+}
