@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles/grid.css">
+    <script src="js/formValidation.js" defer></script> <!-- Подключаем внешний JavaScript файл -->
+</head>
+<body>
+    <header class="header">
+        <h1 class="text-center">Контактная информация</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+		<li><a href="news.html">Актуальные новости</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content"> 
+        <section class="contact-info"> 
+            <h2>Связаться с нами</h2> 
+            <p>Телефон: (846) 374-03-30 (приёмная), 374-03-33 (факс)</p> 
+            <p>Email: info@patsamara.ru</p> 
+            <p>Адрес: 443090, г. Самара, ул. Блюхера, 28А.</p>
+        </section>
+
+        <section class="contact-form"> 
+            <h2>Форма обратной связи</h2>
+            <form id="contactForm" action="#" method="POST"> 
+                <div>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer"> 
+        <p>&copy; 2015 МП СПАТП-4</p> 
+    </footer> 
+</body> 
+</html>

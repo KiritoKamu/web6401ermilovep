@@ -1,0 +1,143 @@
+/* styles/styles.css */
+
+* {
+    box-sizing: border-box; /* Упрощаем управление размерами элементов */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Светлый фон для всей страницы */
+}
+
+header {
+    background-color: #4CAF50; /* Основной цвет заголовка */
+    color: white;
+    padding: 20px 0; /* Увеличиваем отступы для заголовка */
+    text-align: center; /* Центрируем текст заголовка */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для заголовка */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Увеличиваем размер заголовка */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+h1:hover {
+    transform: scale(1.05); /* Увеличение заголовка при наведении */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Центрируем навигацию */
+    margin-top: 10px; /* Отступ сверху для навигации */
+}
+
+nav ul li {
+    display: inline-block; /* Используем inline-block для элементов навигации */
+    margin-right: 20px; /* Отступ между элементами навигации */
+    transition: transform 0.3s; /* Плавный переход для элементов навигации */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Жирный шрифт для ссылок */
+}
+
+nav ul li:hover {
+    transform: scale(1.1); /* Увеличение элемента навигации при наведении */
+}
+
+main {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Селекторы классов для выравнивания */
+.left-align {
+    text-align: left;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* Теговый селектор для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем двойные границы у таблицы */
+}
+
+/* Классный селектор для таблиц */
+.schedule-table th,
+.schedule-table td,
+.routes-table th,
+.routes-table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Увеличиваем отступы в ячейках таблицы */
+}
+
+/* Стили для заголовков таблицы */
+.schedule-table th,
+.routes-table th {
+    background-color: #4CAF50; /* Цвет заголовков таблицы */
+    color: white; /* Цвет текста заголовков таблицы */
+}
+
+/* Эффект при наведении на строки таблицы */
+.schedule-table tr:hover,
+.routes-table tr:hover {
+    background-color: #f1f1f1; /* Цвет фона строки при наведении */
+}
+
+/* Идентификаторный селектор для футера */
+footer {
+    background-color: #4CAF50; /* Основной цвет подвала */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Увеличиваем отступы для подвала */
+}
+
+/* Анимация при загрузке страницы для футера */
+footer {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Анимация появления футера */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    nav ul li {
+        margin-bottom: 10px; /* Отступ между элементами навигации на мобильных устройствах */
+        margin-right: 0; /* Убираем горизонтальные отступы на мобильных устройствах */
+    }
+
+    h1 {
+        font-size: 2em; /* Уменьшаем размер заголовка на мобильных устройствах */
+    }
+}

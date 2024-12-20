@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршруты Автобусов</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Маршруты Автобусов</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+		<li><a href="news.html">Актуальные новости</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Информация о маршрутах</h2>
+            <p>Маршруты Красноглинского района:</p>
+
+            <button id="load_table_button">Загрузить маршруты</button>
+            <table id="main_table" class="routes-table">
+                <thead>
+                    <tr>
+                        <th class="left-align">Маршрут</th>
+                        <th class="center-align">Начальная станция</th>
+                        <th class="right-align">Конечная станция</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2015 МП СПАТП-4</p>
+    </footer>
+
+    <script src="js/event.js"></script> 
+</body>
+</html>
