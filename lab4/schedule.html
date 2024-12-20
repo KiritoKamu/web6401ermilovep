@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание Автобусов</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Расписание Автобусов</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="routes.html">Маршруты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+		<li><a href="news.html">Актуальные новости</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Расписание автобусов</h2>
+            <table class="schedule-table">
+                <tr>
+                    <th class="left-align">Маршрут</th>
+                    <th class="center-align">Время отправления первого и последнего рейсов</th>
+                    <th class="right-align">Интервал (будни | 6-9 | 9-15 | 15-19 | 19-23)</th>
+		    <th class="right-align">Интервал (выходные | 6-9 | 9-15 | 15-19 | 19-23)</th>
+		    <th class="right-align">Примечания</th>
+                </tr>
+                <tr>
+                    <td class="left-align">№ 1</td>
+                    <td class="center-align">04:59 (Крас. Глинка)/22:54 (ЖД Вокзал)</td>
+                    <td class="right-align">7-15; 15-23; 7-15; 20-49</td>
+		    <td class="right-align">15-23; 20-35; 15-23; 25-53</td>
+		    <td class="right-align"></td>
+                </tr>
+                <tr>
+                    <td class="left-align">№ 4*</td>
+                    <td class="center-align">05:59 (Крас. Глинка)/18:15 (СКУ)</td>
+                    <td class="right-align">60; 120; 120; 60</td>
+		    <td class="right-align">Не работает</td>
+		    <td class="right-align">Работает по будням</td>
+	        </tr>
+                <tr>
+                    <td class="left-align">№ 45</td>
+                    <td class="center-align">05:15 (Крас. Глинка)/23:05 (А/ст Аврора)</td>
+                    <td class="right-align">15-30; 30-60; 15-30; 60</td>
+		    <td class="right-align">25; 38; 25; 68</td>
+	            <td class="right-align">Рейсы (от Аст Аврора) - 9:45; 17:24 проследуют без заезда к ООТ "Жигулёвские сады"</td>
+                </tr>
+ 		<tr>
+                    <td class="left-align">№ 56</td>
+                    <td class="center-align">05:45 (Микрорайон Крутые Ключи)/23:54 (Аэрокосмический университет)</td>
+                    <td class="right-align">6-10; 9-14; 6-10; 20</td>
+		    <td class="right-align">6-10; 9-14; 6-10; 20</td>
+	            <td class="right-align"></td>
+                </tr>
+		<tr>
+                    <td class="left-align">№ 68</td>
+                    <td class="center-align">05:45 (А/ст "Красная Глинка")/19:00 (Ст. м. "Победа")</td>
+                    <td class="right-align">(05:45*/06:54*/07:13/15:16*/17:23*/19:15 - от А/с Красная Глинка; 05:56*/06:13*/07:05/15:00/17:00/19:00 - от ст. М. Победа)</td>
+		    <td class="right-align">(05:45*/07:00*/17:00/19:00 - от А/с Красная Глинка; 05:45*/07:00*/15:00/19:00 - от ст. м. Победа)</td>
+	            <td class="right-align">Рейсы со звёздочкой проследуют через ПАО Авиакор (пос. Управленческий)</td>
+                </tr>
+		<tr>
+                    <td class="left-align">№ 78</td>
+                    <td class="center-align">06:00 (Проспект Кирова)/21:30 (Пос. Берёза)</td>
+                    <td class="right-align">60;60;60;60</td>
+		    <td class="right-align">75;100;75;75</td>
+	            <td class="right-align"></td>
+                </tr>
+		<tr>
+                    <td class="left-align">№ 79</td>
+                    <td class="center-align">05:35 (Проспект Кирова)/19:15 (18:15 - выходные)(пос. Прибрежный)</td>
+                    <td class="right-align">(05:35/06:30/08:30/09:30/12:10/13:10/15:45/16:45/17:45) - Пр. Кирова; (07:05/08:00/10:00/11:40/13:40/14:40/17:15/18:15/19:15) - Пос. Прибрежный</td>
+		    <td class="right-align">(05:35/08:30/12:10/16:45) - пр. Кирова/(07:05/10:00/13:40/18:15) - Пос. Прибрежный</td>
+	            <td class="right-align"></td>
+                </tr>
+		<tr>
+                    <td class="left-align">№ 91</td>
+                    <td class="center-align">05:35 (CПТУ-50)/09:15(ул. Ташкентская)</td>
+                    <td class="right-align">05:35/06:35/07:35/08:35 - СПТУ-50; 06:15/07:15/08:15/09:15 - ул. Ташкентская</td>
+		    <td class="right-align">Не работает</td>
+	            <td class="right-align">Работает по будням</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2015 МП СПАТП-4.</p>
+    </footer>
+</body>
+</html>
